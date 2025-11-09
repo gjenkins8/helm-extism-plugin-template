@@ -25,6 +25,8 @@ func init() {
 	extism.SetLogLevel(extism.LogLevelDebug)
 }
 
+// TODO: replace this logic with Helm's Extism plugin runtime
+
 func loadFilePlugin(ctx context.Context) (*extism.Plugin, error) {
 	manifest := extism.Manifest{
 		Wasm: []extism.Wasm{
