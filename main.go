@@ -59,8 +59,8 @@ func runPlugin() error {
 
 // Plugin entry point as invoked by Extism
 //
-//go:wasmexport helm_plugin
-func HelmPlugin() uint64 {
+//go:wasmexport helm_plugin_main
+func HelmPluginMain() uint64 {
 
 	pdk.Log(pdk.LogDebug, "running plugin")
 

@@ -78,7 +78,7 @@ func invokePugin(plugin *extism.Plugin, input *PluginInput) (*PluginOutput, erro
 		return nil, err
 	}
 
-	exitCode, outputData, err := plugin.Call("helm_plugin", inputData)
+	exitCode, outputData, err := plugin.Call("helm_plugin_main", inputData)
 	if err != nil {
 		return nil, err
 	}
